@@ -100,7 +100,7 @@ class Global_Javascript {
 	}
 	
 	public function add_menu() {
-		$page =  add_theme_page ( 'Global Javascript', 'Global Javascript', 8, __FILE__, array( $this, 'admin_page' ) );
+		$page =  add_theme_page ( 'Global Javascript', 'Global Javascript', 'manage_options', __FILE__, array( $this, 'admin_page' ) );
 		add_action('admin_print_scripts-' . $page, array( $this, 'admin_scripts' ) );
 	}
 	 
